@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 워크스페이스 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="03">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 03</p>
+      <h1>화면 네 칸을 읽기</h1>
+      <p class="lede">컷은 도구가 아니라 화면을 어디에 두고 보느냐에서 시작됩니다. 네 패널만 기억하세요.</p>
+      <div class="goal"><strong>목표.</strong> Source, Program, Timeline, Project가 각각 무엇을 보여 주는지 구분합니다.</div>
+
+      <h2>기본 편집 워크스페이스</h2>
+      <p>상단에서 <span class="path">창 → 작업 영역 → 편집</span> 또는 워크스페이스 탭의 <strong>편집</strong>을 고릅니다. 패널이 사라진 것 같으면 이 메뉴로 되돌립니다.</p>
+      <figure class="shot">
+        <img src="../images/03-workspace.png" alt="편집 워크스페이스의 Source, Program, Project, Timeline 네 패널" width="1280" height="720">
+        <figcaption>편집 워크스페이스. 왼쪽 위 Source, 오른쪽 위 Program, 아래 Timeline, 왼쪽 아래 Project.</figcaption>
+      </figure>
+      <div class="card-grid">
+        <article class="card"><p class="num">왼쪽 위</p><h3>Source</h3><p>원본 클립을 미리 봅니다. 자르기 전에 쓸 구간만 고를 때 씁니다.</p></article>
+        <article class="card"><p class="num">오른쪽 위</p><h3>Program</h3><p>시퀀스 결과입니다. 관객이 보게 될 화면입니다.</p></article>
+        <article class="card"><p class="num">아래</p><h3>Timeline</h3><p>컷이 일어나는 곳입니다. 재생헤드가 지금 프레임을 가리킵니다.</p></article>
+        <article class="card"><p class="num">왼쪽 아래</p><h3>Project</h3><p>가져온 클립·시퀀스 목록입니다. 폴더(빈)로 정리할 수 있습니다.</p></article>
+      </div>
+
+      <h2>재생과 줌</h2>
+      <ul class="steps">
+        <li>스페이스바로 재생/정지합니다. <kbd>J</kbd> 뒤로, <kbd>K</kbd> 정지, <kbd>L</kbd> 앞으로. <kbd>L</kbd>을 여러 번 누르면 빨라집니다.</li>
+        <li>타임라인에 포커스가 있을 때 <kbd>+</kbd> <kbd>-</kbd>로 가로 줌합니다. 스크롤 휠로도 됩니다.</li>
+        <li><kbd>\</kbd> 키는 시퀀스 전체를 한눈에 보이게 맞춥니다.</li>
+        <li><kbd>S</kbd>는 스냅입니다. 켜 두면 컷이 클립 가장자리에 붙습니다. 처음에는 켜 두는 편이 낫습니다.</li>
+      </ul>
+      <figure class="shot">
+        <img src="../images/02-timeline.png" alt="타임라인과 빨간 재생헤드" width="1280" height="720">
+        <figcaption>빨간 선이 재생헤드입니다. 스페이스와 JKL로 움직이며, + / - 로 타임라인을 확대합니다.</figcaption>
+      </figure>
+      <p class="tip">무엇을 보고 있는지 헷갈리면 Program(오른쪽)을 보세요. 그게 “지금 편집 결과”입니다. Source는 아직 시퀀스에 넣기 전 원본입니다.</p>
+
+      <h2>도구 패널</h2>
+      <p>타임라인 왼쪽의 세로 아이콘이 도구입니다. 컷편집에서 당장 쓰는 것은 두 개입니다.</p>
+      <ul>
+        <li><strong>선택 도구</strong> <kbd>V</kbd> — 클립을 고르고, 가장자리를 잡아 늘리거나 줄입니다.</li>
+        <li><strong>레이저 도구</strong> <kbd>C</kbd> — 재생헤드 위치에서 클립을 자릅니다.</li>
+      </ul>
+      <figure class="shot">
+        <img src="../images/03-tools.png" alt="타임라인 왼쪽 도구 패널에서 선택 도구와 레이저 도구" width="1280" height="720">
+        <figcaption>타임라인 왼쪽 도구 막대. 선택은 V, 레이저는 C입니다.</figcaption>
+      </figure>
+      <p>나머지는 06 트림에서 다룹니다. 지금은 <kbd>V</kbd>와 <kbd>C</kbd>만 오가면 됩니다.</p>
+
+      <h2>확인</h2>
+      <div class="check-list" data-checklist="first-cut-03">
+        <label><input type="checkbox"> 편집 워크스페이스로 화면을 되돌릴 수 있다</label>
+        <label><input type="checkbox"> Source와 Program의 차이를 말로 설명할 수 있다</label>
+        <label><input type="checkbox"> 스페이스, JKL, 타임라인 줌을 써 봤다</label>
+        <label><input type="checkbox"> V(선택)와 C(레이저)를 전환할 수 있다</label>
+      </div>
+      <p class="progress" data-checklist-progress></p>
+
+      <div class="pager">
+        <a href="02-project.html"><span>이전</span>02 프로젝트</a>
+        <a href="04-in-out.html"><span>다음</span>04 인·아웃</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>

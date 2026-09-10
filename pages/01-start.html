@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 시작하기 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="01">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 01</p>
+      <h1>프리미어 프로 시작하기</h1>
+      <p class="lede">프로그램을 설치하고, 첫 화면을 이해하고, 빈 프로젝트 하나를 저장할 수 있게 됩니다.</p>
+      <div class="goal"><strong>목표.</strong> Creative Cloud에서 Premiere Pro를 설치한 뒤, 작업 폴더를 만들고 새 프로젝트까지 엽니다.</div>
+
+      <h2>프리미어 프로가 하는 일</h2>
+      <p>프리미어 프로는 촬영한 영상을 타임라인에 올려 <strong>자르고, 붙이고, 소리와 화면을 맞추는</strong> 프로그램입니다. 컷편집이 핵심 작업입니다. 색보정과 이펙트는 컷이 끝난 뒤에 해도 늦지 않습니다.</p>
+      <figure class="shot">
+        <img src="../images/01-workspace.png" alt="프리미어 프로 편집 화면. 소스·프로그램 모니터와 타임라인이 보인다" width="1280" height="720">
+        <figcaption>편집 화면: 위는 모니터, 아래는 타임라인입니다. 컷은 이 타임라인에서 이뤄집니다.</figcaption>
+      </figure>
+
+      <h2>준비물</h2>
+      <ul class="steps">
+        <li>Adobe ID (이메일 계정). 없으면 adobe.com에서 만듭니다.</li>
+        <li>Creative Cloud 데스크톱 앱. 프리미어는 이 앱을 통해 설치합니다.</li>
+        <li>여유 디스크 공간. 프로그램과 영상 원본을 둘 곳이 필요합니다.</li>
+        <li>작업용 폴더. 바탕화면에 흩지 말고, 프로젝트마다 폴더를 나눕니다.</li>
+      </ul>
+      <p class="callout">구독·체험판 가격은 시기마다 달라집니다. 결제는 <a href="https://www.adobe.com/kr/products/premiere.html" rel="noopener" target="_blank">Adobe 공식 페이지</a>에서 확인하세요. 이 가이드는 설치 경로만 안내합니다.</p>
+
+      <h2>설치 흐름</h2>
+      <div class="flow">
+        <span>Adobe ID</span><span class="arrow">→</span>
+        <span>Creative Cloud</span><span class="arrow">→</span>
+        <span>Premiere Pro 설치</span><span class="arrow">→</span>
+        <span>첫 실행</span><span class="arrow">→</span>
+        <span>새 프로젝트</span>
+      </div>
+      <ol class="steps">
+        <li>브라우저에서 Adobe 계정으로 로그인합니다.</li>
+        <li>Creative Cloud 데스크톱 앱을 설치하고 같은 계정으로 로그인합니다.</li>
+        <li>앱 목록에서 <strong>Premiere Pro</strong>를 찾아 설치를 누릅니다.</li>
+        <li>설치가 끝나면 Creative Cloud에서 <strong>열기</strong>를 누릅니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/01-install.png" alt="Creative Cloud 앱 목록에서 Premiere Pro를 설치하는 화면" width="1280" height="720">
+        <figcaption>Creative Cloud 앱 목록에서 Premiere Pro를 찾아 설치합니다.</figcaption>
+      </figure>
+      <p class="tip">Mac에서는 이후 단축키의 <kbd>Ctrl</kbd>을 <kbd>Cmd</kbd>로 바꿔 쓰면 됩니다. 이 가이드는 Windows를 기준으로 적습니다.</p>
+
+      <h2>첫 실행과 홈 화면</h2>
+      <p>처음 켜면 로그인 상태 확인, 때로는 GPU(하드웨어 가속) 안내가 나옵니다. 잘 모르겠으면 기본값으로 진행해도 됩니다. 편집 화면이 바로 열리지 않고 <strong>홈</strong>이 보입니다.</p>
+      <figure class="shot">
+        <img src="../images/01-home.png" alt="프리미어 프로 홈 화면. 새 프로젝트 버튼이 있다" width="1280" height="720">
+        <figcaption>처음 켜면 편집 화면이 아니라 홈이 열립니다. 여기서 새 프로젝트를 만듭니다.</figcaption>
+      </figure>
+      <ul class="steps">
+        <li><strong>홈</strong> — 최근 프로젝트, 새 프로젝트 버튼이 있습니다.</li>
+        <li><strong>학습</strong> — Adobe 튜토리얼입니다. 이 사이트와 병행해도 됩니다.</li>
+        <li><strong>새 프로젝트</strong> — 지금 만들 항목입니다. 이름을 짓고 저장 위치를 고릅니다.</li>
+      </ul>
+
+      <h2>작업 폴더를 먼저 만들기</h2>
+      <p>프리미어를 열기 전에 탐색기에서 폴더를 만드세요. 원본과 프로젝트 파일을 한곳에 섞으면 나중에 영상을 옮길 때 링크가 깨집니다.</p>
+      <p>예: <span class="path">영상작업/내첫컷/</span></p>
+      <ul>
+        <li><span class="path">01_원본</span> — 카메라·폰에서 가져온 파일</li>
+        <li><span class="path">02_프로젝트</span> — Premiere 프로젝트(.prproj)</li>
+        <li><span class="path">03_내보내기</span> — 완성 MP4</li>
+      </ul>
+      <figure class="shot">
+        <img src="../images/01-folders.png" alt="원본, 프로젝트, 내보내기 폴더가 나뉜 작업 폴더" width="1280" height="720">
+        <figcaption>탐색기에서 원본·프로젝트·내보내기 폴더를 미리 나눠 둡니다.</figcaption>
+      </figure>
+
+      <h2>새 프로젝트 열기</h2>
+      <ol class="steps">
+        <li>홈에서 <strong>새 프로젝트</strong>를 누릅니다.</li>
+        <li>프로젝트 이름을 적습니다. 예: <span class="path">내첫컷</span></li>
+        <li>위치는 <span class="path">02_프로젝트</span> 폴더로 지정합니다.</li>
+        <li>만들기를 누르면 어두운 편집 화면이 열립니다. 타임라인이 비어 있어도 정상입니다.</li>
+        <li><span class="path">파일 → 저장</span> 또는 <kbd>Ctrl</kbd>+<kbd>S</kbd>로 한 번 저장합니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/01-new-project.png" alt="새 프로젝트 대화상자. 이름과 저장 위치를 지정한다" width="1280" height="720">
+        <figcaption>새 프로젝트에서 이름을 짓고, 저장 위치는 02_프로젝트 폴더로 지정합니다.</figcaption>
+      </figure>
+      <p>시퀀스(프레임레이트·해상도)와 영상 가져오기는 다음 레슨에서 다룹니다. 지금은 “프로그램이 켜지고, 파일이 폴더에 생겼다”면 충분합니다.</p>
+
+      <h2>확인</h2>
+      <div class="check-list" data-checklist="first-cut-01">
+        <label><input type="checkbox"> Creative Cloud 앱 목록에 Premiere Pro가 보인다</label>
+        <label><input type="checkbox"> 홈 화면까지 프로그램이 켜진다</label>
+        <label><input type="checkbox"> 원본 / 프로젝트 / 내보내기 폴더를 만들어 두었다</label>
+        <label><input type="checkbox"> 새 프로젝트를 저장했고 .prproj 파일이 보인다</label>
+      </div>
+      <p class="progress" data-checklist-progress></p>
+
+      <div class="pager">
+        <a href="../index.html"><span>이전</span>가이드 소개</a>
+        <a href="02-project.html"><span>다음</span>02 프로젝트</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>

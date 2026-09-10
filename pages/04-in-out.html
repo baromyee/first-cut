@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 인·아웃 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="04">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 04</p>
+      <h1>쓸 구간만 집어 넣기</h1>
+      <p class="lede">원본 전체를 타임라인에 올리지 않습니다. 인·아웃으로 “이 부분만” 지정한 뒤 넣습니다.</p>
+      <div class="goal"><strong>목표.</strong> Source에서 I/O를 찍고, Insert와 Overwrite의 차이를 알고 클립을 시퀀스에 넣습니다.</div>
+
+      <h2>인 포인트와 아웃 포인트</h2>
+      <ol class="steps">
+        <li>프로젝트 패널에서 클립을 더블클릭합니다. Source 모니터에 열립니다.</li>
+        <li>쓸 시작 프레임에서 <kbd>I</kbd> (Mark In).</li>
+        <li>쓸 끝 프레임에서 <kbd>O</kbd> (Mark Out).</li>
+        <li>Source 아래 미니 타임라인에 밝은 구간이 표시되면 성공입니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/04-inout.png" alt="소스 모니터에서 인·아웃 구간이 표시된 화면" width="1280" height="720">
+        <figcaption>Source 모니터. I와 O로 찍은 구간이 아래 미니 타임라인에 밝게 표시됩니다.</figcaption>
+      </figure>
+      <p>잘못 찍었으면 다시 <kbd>I</kbd> / <kbd>O</kbd>를 누르면 위치가 바뀝니다. 지우려면 <span class="path">마커 → 인 앤 아웃 지우기</span> 또는 Source에서 우클릭합니다.</p>
+
+      <h2>Insert와 Overwrite</h2>
+      <p>시퀀스 재생헤드가 “어디에 넣을지”를 정합니다. 그다음 넣는 방식이 두 가지입니다.</p>
+      <div class="card-grid">
+        <article class="card">
+          <p class="num">쉼표 ,</p>
+          <h3>Insert 삽입</h3>
+          <p>재생헤드 위치를 벌리고 그 사이에 클립을 넣습니다. 뒤에 있던 컷이 밀려 납니다. 길이가 늘어납니다.</p>
+        </article>
+        <article class="card">
+          <p class="num">마침표 .</p>
+          <h3>Overwrite 덮어쓰기</h3>
+          <p>이미 있는 컷 위에 덮습니다. 전체 길이는 그대로이고, 그 구간만 바뀝니다.</p>
+        </article>
+      </div>
+      <p class="callout">입문 컷편집에서는 대부분 <strong>Insert(,)</strong>가 안전합니다. Overwrite는 “이 자리의 화면만 바꾸고 싶을 때” 씁니다. 실수로 덮어썼다면 <kbd>Ctrl</kbd>+<kbd>Z</kbd>.</p>
+      <figure class="shot">
+        <img src="../images/04-insert.png" alt="타임라인 재생헤드 위치에 클립을 삽입하는 화면" width="1280" height="720">
+        <figcaption>재생헤드가 넣을 자리입니다. 쉼표(Insert)는 뒤를 밀어 넣고, 마침표(Overwrite)는 그 위를 덮습니다.</figcaption>
+      </figure>
+
+      <h2>세 점 편집의 감각</h2>
+      <p>프로는 보통 Source에서 인·아웃(두 점)을 찍고, 시퀀스에서는 인(한 점, 재생헤드)만 찍습니다. 이것을 세 점 편집이라고 합니다. 마우스로 드래그하는 것보다 빠르고, 쓸데없는 앞뒤 공백이 타임라인에 덜 쌓입니다.</p>
+
+      <h2>확인</h2>
+      <div class="check-list" data-checklist="first-cut-04">
+        <label><input type="checkbox"> Source에서 I와 O로 구간을 지정했다</label>
+        <label><input type="checkbox"> 쉼표로 Insert를 해 봤다</label>
+        <label><input type="checkbox"> 마침표로 Overwrite를 한 뒤 실행 취소로 되돌렸다</label>
+        <label><input type="checkbox"> 타임라인에 “쓸 구간만” 올라간 것을 확인했다</label>
+      </div>
+      <p class="progress" data-checklist-progress></p>
+
+      <div class="pager">
+        <a href="03-workspace.html"><span>이전</span>03 워크스페이스</a>
+        <a href="05-cut.html"><span>다음</span>05 컷</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>

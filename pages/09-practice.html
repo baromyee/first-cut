@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09 실습 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="09">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 09</p>
+      <h1>한 편을 잘라 보기</h1>
+      <p class="lede">1~3분 원본이면 충분합니다. 폰으로 말한 영상, 두 각도의 짧은 대화, 브이로그 한 장면 중 아무것이나 가져오세요.</p>
+      <div class="goal"><strong>목표.</strong> 아래 순서로 첫 컷을 끝내고, 자주 하는 실수를 피합니다. 체크는 이 브라우저에 저장됩니다.</div>
+      <figure class="shot">
+        <img src="../images/02-timeline.png" alt="컷을 진행 중인 타임라인 화면" width="1280" height="720">
+        <figcaption>실습 목표 화면. 클립이 타임라인에 올라간 뒤, 아래 순서대로 자르고 다듬습니다.</figcaption>
+      </figure>
+
+      <p class="progress" data-checklist-progress></p>
+      <div class="check-list" data-checklist="first-cut-practice">
+        <label><input type="checkbox"> 작업 폴더(원본 / 프로젝트 / 내보내기)를 만들고 프로젝트를 그 안에 저장했다</label>
+        <label><input type="checkbox"> 원본을 복사한 뒤 가져왔고, 시퀀스가 열려 있다</label>
+        <label><input type="checkbox"> Source에서 I/O로 쓸 구간만 Insert 했다</label>
+        <label><input type="checkbox"> 말 더듬·침묵·리테이크를 레이저 + Ripple Delete로 걷어 냈다</label>
+        <label><input type="checkbox"> 어색한 경계를 Q/W 또는 Rolling으로 한 프레임씩 다듬었다</label>
+        <label><input type="checkbox"> 장면이 바뀌는 곳 중 한 곳은 J-cut 또는 L-cut으로 이었다</label>
+        <label><input type="checkbox"> 처음부터 끝까지 소리 내어 재생했고, 구멍(검은 프레임)이 없다</label>
+        <label><input type="checkbox"> Ctrl+S로 저장했다</label>
+      </div>
+
+      <h2>자주 하는 실수</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>원본을 카메라에서 바로 편집</h3>
+          <p>케이블을 뽑거나 폰을 정리하면 미디어가 오프라인이 됩니다. 항상 <span class="path">01_원본</span>에 복사한 뒤 가져오세요.</p>
+        </article>
+        <article class="card">
+          <h3>Delete로 구멍 남기기</h3>
+          <p>검은 화면이 깜빡이면 Ripple이 아닙니다. <kbd>Shift</kbd>+<kbd>Delete</kbd>를 쓰세요.</p>
+        </article>
+        <article class="card">
+          <h3>레이저를 켠 채 드래그</h3>
+          <p>클립이 여러 동강 납니다. 자르자마자 <kbd>V</kbd>.</p>
+        </article>
+        <article class="card">
+          <h3>모든 컷을 같은 프레임에서 영상·소리 동시 절단</h3>
+          <p>대화가 딱딱해 보입니다. 한두 곳은 소리를 먼저 넘기세요.</p>
+        </article>
+        <article class="card">
+          <h3>타임라인을 너무 축소한 채 자르기</h3>
+          <p>프레임이 안 보입니다. <kbd>+</kbd>로 확대한 다음 자르세요.</p>
+        </article>
+        <article class="card">
+          <h3>저장을 안 함</h3>
+          <p>프리미어는 무거울 수 있습니다. 컷 세트가 끝날 때마다 저장합니다.</p>
+        </article>
+      </div>
+
+      <h2>첫 컷을 판단하는 질문</h2>
+      <ul>
+        <li>이 초가 이야기에 필요한가? 아니면 촬영 흔적인가?</li>
+        <li>컷 직후 눈이 튀는가, 동작·소리가 이어지는가?</li>
+        <li>침묵이 “여운”인가 “빈 테이프”인가?</li>
+      </ul>
+      <p class="tip">한 번에 완벽하게 자르지 마세요. 러프 컷으로 길이부터 줄이고, 두 번째 재생에서 경계만 다듬습니다.</p>
+
+      <div class="pager">
+        <a href="08-shortcuts.html"><span>이전</span>08 단축키</a>
+        <a href="10-export.html"><span>다음</span>10 내보내기</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06 트림 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="06">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 06</p>
+      <h1>컷 포인트를 다듬기</h1>
+      <p class="lede">레이저는 큰 덩어리를 나눕니다. 트림은 그 경계를 프레임 단위로 옮깁니다. 좋은 컷은 여기서 결정됩니다.</p>
+      <div class="goal"><strong>목표.</strong> Ripple, Rolling, Slip, Slide 네 가지가 타임라인 길이와 클립 내용에 어떤 영향을 주는지 구분합니다.</div>
+
+      <h2>네 도구</h2>
+      <div class="card-grid">
+        <article class="card">
+          <p class="num">Ripple · B</p>
+          <h3>잔물결 편집</h3>
+          <p>한쪽 가장자리만 늘리거나 줄입니다. 시퀀스 전체 길이가 바뀌고, 뒤 클립이 따라 움직입니다.</p>
+        </article>
+        <article class="card">
+          <p class="num">Rolling · N</p>
+          <h3>롤링 편집</h3>
+          <p>맞닿은 두 클립의 경계를 함께 밉니다. 앞 샷이 길어지면 뒤 샷이 짧아집니다. 전체 길이는 그대로입니다.</p>
+        </article>
+        <article class="card">
+          <p class="num">Slip · Y</p>
+          <h3>슬립</h3>
+          <p>클립이 타임라인에서 차지하는 자리는 그대로입니다. 그 안에서 보이는 원본 구간만 앞뒤로 미끄러집니다.</p>
+        </article>
+        <article class="card">
+          <p class="num">Slide · U</p>
+          <h3>슬라이드</h3>
+          <p>클립 내용은 그대로 두고, 앞뒤 클립 사이를 미끄러져 자리를 바꿉니다. 이웃 클립 길이가 보상됩니다.</p>
+        </article>
+      </div>
+
+      <h2>선택 도구로도 트림</h2>
+      <p><kbd>V</kbd> 상태에서 클립 <strong>가장자리</strong>에 커서를 올리면 트림 아이콘이 됩니다. 그냥 드래그하면 일반 트림(구멍을 남길 수 있음), <kbd>Ctrl</kbd>을 누른 채 가장자리를 드래그하면 Ripple에 가깝게 동작합니다. 컷과 컷이 맞붙은 경계에서는 Rolling 커서가 나타나기도 합니다.</p>
+      <ol class="steps">
+        <li>두 클립이 붙은 경계를 확대합니다 (<kbd>+</kbd>).</li>
+        <li>경계를 드래그하며 Program의 두 모니터(앞 샷 끝 / 뒤 샷 시작)를 봅니다.</li>
+        <li>한 프레임이 어색하면 키보드 <kbd>Q</kbd>(재생헤드 앞을 트림)와 <kbd>W</kbd>(재생헤드 뒤를 트림)를 씁니다. 빠른 잔물결 트림입니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/06-trim.png" alt="두 클립이 맞닿은 경계를 트림하는 화면" width="1280" height="720">
+        <figcaption>클립이 붙은 경계를 확대하면 트림 커서가 나타납니다. 앞뒤 샷을 Program에서 비교하며 한 프레임씩 옮깁니다.</figcaption>
+      </figure>
+
+      <h2>언제 무엇을</h2>
+      <ul>
+        <li>말이 조금 길다 → Ripple로 끝을 당깁니다.</li>
+        <li>컷 타이밍만 늦다/빠르다, 전체 길이는 유지 → Rolling.</li>
+        <li>클립 길이는 좋은데 표정이 한 박자 빠르다 → Slip.</li>
+        <li>이 샷을 조금 앞당기고 싶다 → Slide.</li>
+      </ul>
+      <p class="tip">트림의 정답은 Program을 재생해 보는 것입니다. 파형을 보고 숨이 끝나는 지점에 경계를 두면 말 컷이 안정됩니다.</p>
+
+      <h2>확인</h2>
+      <div class="check-list" data-checklist="first-cut-06">
+        <label><input type="checkbox"> Ripple로 클립을 줄여 전체 길이가 짧아진 것을 봤다</label>
+        <label><input type="checkbox"> Rolling으로 경계만 옮기고 전체 길이가 유지된 것을 봤다</label>
+        <label><input type="checkbox"> Slip으로 같은 길이 안에서 화면 내용만 바꿨다</label>
+        <label><input type="checkbox"> Q / W로 재생헤드 기준 트림을 해 봤다</label>
+      </div>
+      <p class="progress" data-checklist-progress></p>
+
+      <div class="pager">
+        <a href="05-cut.html"><span>이전</span>05 컷</a>
+        <a href="07-jl-cut.html"><span>다음</span>07 J / L 컷</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>

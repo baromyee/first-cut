@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08 단축키 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="08">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 08</p>
+      <h1>컷편집 단축키</h1>
+      <p class="lede">Windows 기준입니다. Mac은 <kbd>Ctrl</kbd>을 <kbd>Cmd</kbd>, <kbd>Alt</kbd>를 <kbd>Option</kbd>으로 바꿔 쓰면 됩니다.</p>
+      <div class="goal"><strong>목표.</strong> 아래 키를 검색해 찾고, 컷할 때 마우스를 덜 씁니다.</div>
+      <figure class="shot">
+        <img src="../images/08-shortcuts.png" alt="프리미어 프로 키보드 단축키 설정 창" width="1280" height="720">
+        <figcaption>편집 → 키보드 단축키. 이 창에서 키를 검색하고 바꿀 수 있습니다.</figcaption>
+      </figure>
+
+      <div class="shortcut-toolbar">
+        <input type="search" data-shortcut-search placeholder="키 또는 기능 검색 — 예: 레이저, ripple, I" aria-label="단축키 검색">
+      </div>
+      <p class="card" data-shortcut-empty hidden>검색 결과가 없습니다. 다른 단어로 시도해 보세요.</p>
+
+      <div class="shortcut-grid">
+        <article class="card shortcut-card" data-shortcut-card data-keys="i o in out 인 아웃 mark">
+          <p class="num"><kbd>I</kbd> <kbd>O</kbd></p>
+          <h3>인 / 아웃</h3>
+          <p>Source 또는 타임라인에서 쓸 구간의 시작과 끝을 찍습니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys=", . insert overwrite 삽입 덮어쓰기 comma period">
+          <p class="num"><kbd>,</kbd> <kbd>.</kbd></p>
+          <h3>Insert / Overwrite</h3>
+          <p>쉼표는 밀어 넣기, 마침표는 덮어쓰기입니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="c v razor 레이저 선택 도구">
+          <p class="num"><kbd>C</kbd> <kbd>V</kbd></p>
+          <h3>레이저 / 선택</h3>
+          <p>자르고 나면 바로 V로 돌아옵니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="ctrl k cut 자르기">
+          <p class="num"><kbd>Ctrl</kbd>+<kbd>K</kbd></p>
+          <h3>재생헤드에서 자르기</h3>
+          <p>레이저로 클릭하지 않고 타깃 트랙을 자릅니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="shift delete ripple 잔물결 삭제">
+          <p class="num"><kbd>Shift</kbd>+<kbd>Delete</kbd></p>
+          <h3>Ripple Delete</h3>
+          <p>클립을 지우고 뒤 컷을 당겨 구멍을 메웁니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="q w trim 트림">
+          <p class="num"><kbd>Q</kbd> <kbd>W</kbd></p>
+          <h3>헤드 앞 / 뒤 트림</h3>
+          <p>재생헤드 기준으로 앞(Q) 또는 뒤(W)를 잔물결 트림합니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="b n y u ripple rolling slip slide 롤링 슬립 슬라이드">
+          <p class="num"><kbd>B</kbd> <kbd>N</kbd> <kbd>Y</kbd> <kbd>U</kbd></p>
+          <h3>트림 도구</h3>
+          <p>Ripple, Rolling, Slip, Slide.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="j k l 재생 shuttle">
+          <p class="num"><kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd></p>
+          <h3>셔틀 재생</h3>
+          <p>뒤로, 정지, 앞으로. L을 반복하면 배속이 올라갑니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="space 스페이스 재생 정지">
+          <p class="num"><kbd>Space</kbd></p>
+          <h3>재생 / 정지</h3>
+          <p>가장 많이 쓰는 키입니다. 컷 전후로 반드시 들어 보세요.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="+ - \ zoom 줌">
+          <p class="num"><kbd>+</kbd> <kbd>-</kbd> <kbd>\</kbd></p>
+          <h3>타임라인 줌</h3>
+          <p>확대, 축소, 시퀀스 전체에 맞추기.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="s snap 스냅">
+          <p class="num"><kbd>S</kbd></p>
+          <h3>스냅</h3>
+          <p>컷이 가장자리·재생헤드에 붙습니다. 입문은 켜 두세요.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="alt unlink 링크 오디오 비디오">
+          <p class="num"><kbd>Alt</kbd>+드래그</p>
+          <h3>영상·소리 따로 트림</h3>
+          <p>J/L 컷을 만들 때 씁니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="ctrl s save 저장">
+          <p class="num"><kbd>Ctrl</kbd>+<kbd>S</kbd></p>
+          <h3>저장</h3>
+          <p>컷 몇 번마다 저장합니다. 자동 저장과 별개입니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="ctrl z undo 실행 취소">
+          <p class="num"><kbd>Ctrl</kbd>+<kbd>Z</kbd></p>
+          <h3>실행 취소</h3>
+          <p>잘못된 Overwrite나 삭제를 즉시 되돌립니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="ctrl i import 가져오기">
+          <p class="num"><kbd>Ctrl</kbd>+<kbd>I</kbd></p>
+          <h3>가져오기</h3>
+          <p>미디어를 프로젝트로 들입니다.</p>
+        </article>
+        <article class="card shortcut-card" data-shortcut-card data-keys="m marker 마커">
+          <p class="num"><kbd>M</kbd></p>
+          <h3>마커</h3>
+          <p>다시 손볼 컷, 자막 위치, 음악 드롭을 표시합니다.</p>
+        </article>
+      </div>
+
+      <p class="tip" style="margin-top:28px"><span class="path">편집 → 키보드 단축키</span>에서 키를 검색하고 바꿀 수 있습니다. 기본값을 먼저 몸에 익힌 뒤 바꾸는 것을 권합니다.</p>
+
+      <div class="pager">
+        <a href="07-jl-cut.html"><span>이전</span>07 J / L 컷</a>
+        <a href="09-practice.html"><span>다음</span>09 실습</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/shortcuts.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 내보내기 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="10">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 10</p>
+      <h1>완성본을 파일로</h1>
+      <p class="lede">컷이 끝났으면 시퀀스를 H.264 MP4로 뽑습니다. 유튜브·카톡·폰 재생에 가장 무난한 형식입니다.</p>
+      <div class="goal"><strong>목표.</strong> 검은 구멍과 오디오를 점검한 뒤, <span class="path">03_내보내기</span> 폴더에 MP4를 만듭니다.</div>
+
+      <h2>내보내기 전에</h2>
+      <ol class="steps">
+        <li>시퀀스 시작이 첫 프레임인지 봅니다. 앞에 빈 공간이 있으면 클립을 맨 앞으로 Ripple 당깁니다.</li>
+        <li>끝도 마지막 컷에서 멈추는지 봅니다. 뒤에 쓸데없는 여백이 있으면 시퀀스가 길어진 채로 나갑니다.</li>
+        <li>처음부터 끝까지 재생합니다. 소리 끊김, 깜빡이는 검정, 잘못 덮어쓴 구간이 없는지 확인합니다.</li>
+        <li><kbd>Ctrl</kbd>+<kbd>S</kbd>로 저장합니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/02-timeline.png" alt="시퀀스 앞뒤에 빈 공간이 없는 타임라인" width="1280" height="720">
+        <figcaption>내보내기 전: 시퀀스 맨 앞과 맨 뒤에 빈 여백이 없는지 확인합니다.</figcaption>
+      </figure>
+
+      <h2>H.264로 보내기</h2>
+      <ol class="steps">
+        <li>내보낼 시퀀스를 타임라인에서 연 다음 <kbd>Ctrl</kbd>+<kbd>M</kbd> 또는 <span class="path">파일 → 내보내기 → 미디어</span>.</li>
+        <li>형식은 <strong>H.264</strong>.</li>
+        <li>프리셋은 용도에 맞게: 유튜브라면 <strong>YouTube 1080p Full HD</strong> 계열. 그냥 보관이면 Match Source + High bitrate도 됩니다.</li>
+        <li>출력 이름을 정하고 위치는 <span class="path">03_내보내기</span>로 지정합니다.</li>
+        <li>오디오가 켜져 있는지, 비디오/오디오 체크박스가 살아 있는지 봅니다.</li>
+        <li><strong>내보내기</strong>를 누릅니다. Media Encoder로 보내도 결과는 같습니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/10-export.png" alt="내보내기 미디어 창에서 형식을 H.264로 설정한 화면" width="1280" height="720">
+        <figcaption>Ctrl+M 내보내기 창. 형식은 H.264, 저장 위치는 03_내보내기 폴더로 지정합니다.</figcaption>
+      </figure>
+      <p class="callout">프리셋 이름을 외울 필요는 없습니다. 해상도가 시퀀스와 같고, 확장자가 <span class="path">.mp4</span>이면 입문용으로 충분합니다. 파일이 너무 크면 비트레이트를 낮추고, 깨져 보이면 높입니다.</p>
+
+      <h2>인·아웃이 내보내기에 영향을 줄 때</h2>
+      <p>시퀀스에 인·아웃이 남아 있으면 그 구간만 나갈 수 있습니다. 전체 영상을 보내려면 내보내기 창에서 범위를 <strong>전체 시퀀스</strong>로 두거나, 타임라인의 인·아웃을 지웁니다.</p>
+
+      <h2>확인</h2>
+      <div class="check-list" data-checklist="first-cut-10">
+        <label><input type="checkbox"> 시퀀스 앞뒤에 빈 공간이 없다</label>
+        <label><input type="checkbox"> Ctrl+M으로 내보내기 창을 열었다</label>
+        <label><input type="checkbox"> 형식이 H.264이고 저장 위치가 03_내보내기다</label>
+        <label><input type="checkbox"> 완성 MP4를 플레이어에서 열어 화면과 소리가 나온다</label>
+      </div>
+      <p class="progress" data-checklist-progress></p>
+
+      <h2>다음 단계</h2>
+      <p>컷이 익숙해지면 그때 가서 자막, 색, 음악 볼륨을 다루면 됩니다. 지금은 필요 없는 시간을 걷어 내고, 소리가 장면을 이어 주는 감각이면 충분합니다.</p>
+
+      <div class="pager">
+        <a href="09-practice.html"><span>이전</span>09 실습</a>
+        <a href="../index.html"><span>처음으로</span>가이드 소개</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>

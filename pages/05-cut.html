@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 컷 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="05">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 05</p>
+      <h1>자르고, 구멍을 메우기</h1>
+      <p class="lede">컷편집의 기본 동작은 두 번입니다. 레이저로 자르고, 필요 없는 조각을 Ripple로 지웁니다.</p>
+      <div class="goal"><strong>목표.</strong> 말 더듬, 침묵, 반복을 잘라 내고 뒤 클립이 앞으로 붙어 빈칸이 없게 만듭니다.</div>
+
+      <h2>왜 Ripple인가</h2>
+      <p>일반 <kbd>Delete</kbd>는 클립만 지우고 <strong>구멍</strong>을 남깁니다. 검은 화면이 생깁니다. <strong>Ripple Delete</strong>는 지운 뒤 오른쪽 클립을 당겨 붙입니다. 컷편집에서는 거의 항상 Ripple이 맞습니다.</p>
+      <div class="diagram" aria-hidden="true">
+        <div class="timeline">
+          <div class="track">
+            <span class="track-name">V1</span>
+            <div class="bars cut-line" style="--cut: 40%">
+              <span class="bar v" style="width:40%">남김</span>
+              <span class="bar v" style="width:20%;opacity:.4">삭제</span>
+              <span class="bar v" style="width:40%">당겨짐</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>레이저로 자르기</h2>
+      <ol class="steps">
+        <li><kbd>C</kbd>로 레이저를 켭니다. 커서가 칼 모양이 됩니다.</li>
+        <li>자를 프레임에 재생헤드를 맞춥니다. <kbd>←</kbd> <kbd>→</kbd>로 한 프레임씩 움직입니다.</li>
+        <li>클립을 클릭하면 그 지점이 두 조각이 됩니다. <kbd>Shift</kbd>를 누른 채 클릭하면 위아래 트랙을 같이 자릅니다.</li>
+        <li>끝나면 바로 <kbd>V</kbd>로 선택 도구로 돌아옵니다. 레이저를 켠 채로 드래그하면 클립이 잘립니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/05-razor.png" alt="레이저 도구로 타임라인 클립을 자르는 화면" width="1280" height="720">
+        <figcaption>C를 누른 뒤 자를 프레임(재생헤드)에서 클립을 클릭합니다. 끝나면 V로 돌아옵니다.</figcaption>
+      </figure>
+      <p class="tip">레이저 없이 자르려면 재생헤드를 두고 <kbd>Ctrl</kbd>+<kbd>K</kbd> (시퀀스의 모든 타깃 트랙 자르기)를 씁니다. 한 클립만 자르려면 클립을 선택한 뒤 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd>입니다.</p>
+
+      <h2>Ripple Delete</h2>
+      <ol class="steps">
+        <li><kbd>V</kbd>로 버릴 조각을 클릭합니다.</li>
+        <li><kbd>Shift</kbd>+<kbd>Delete</kbd> 또는 우클릭 → <strong>잔물결 삭제</strong>(Ripple Delete). 버전 번역에 따라 이름이 조금 다를 수 있습니다.</li>
+        <li>뒤 컷이 앞으로 붙었는지 Program에서 재생해 확인합니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/05-ripple.png" alt="클립을 선택하고 잔물결 삭제를 하는 타임라인" width="1280" height="720">
+        <figcaption>버릴 조각을 선택한 뒤 Shift+Delete(잔물결 삭제). 뒤 클립이 앞으로 붙어 구멍이 없어집니다.</figcaption>
+      </figure>
+      <p>지울 구간의 인·아웃을 타임라인에서 찍은 뒤 Ripple Delete 할 수도 있습니다. 긴 침묵을 통째로 걷어낼 때 편합니다.</p>
+
+      <h2>자르는 위치의 감각</h2>
+      <p>말은 <strong>숨 쉬는 뒤</strong>, 동작은 <strong>움직임이 분명해진 순간</strong>에서 자르면 자연스럽습니다. 문장이 끝나기 전에 자르면 다음 샷으로 에너지가 넘어갑니다. 너무 이르게 자르면 숨이 막히고, 너무 늦으면 늘어집니다. 같은 컷을 한 프레임씩 앞뒤로 옮겨 보며 귀를 믿으세요.</p>
+
+      <h2>확인</h2>
+      <div class="check-list" data-checklist="first-cut-05">
+        <label><input type="checkbox"> C와 Ctrl+K로 클립을 잘라 봤다</label>
+        <label><input type="checkbox"> Delete와 Ripple Delete의 결과 차이를 봤다</label>
+        <label><input type="checkbox"> 불필요 구간을 지운 뒤 타임라인에 검은 구멍이 없다</label>
+        <label><input type="checkbox"> 자른 뒤 V로 선택 도구에 복귀하는 습관을 들였다</label>
+      </div>
+      <p class="progress" data-checklist-progress></p>
+
+      <div class="pager">
+        <a href="04-in-out.html"><span>이전</span>04 인·아웃</a>
+        <a href="06-trim.html"><span>다음</span>06 트림</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>

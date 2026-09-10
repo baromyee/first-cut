@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 프로젝트 — First Cut</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="02">
+  <header class="app-header">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">FC</span>
+      <span>First Cut<span class="brand-sub">Premiere Pro 컷편집 가이드</span></span>
+    </a>
+    <button class="menu-toggle" type="button" data-nav-toggle>목차</button>
+  </header>
+  <div class="overlay" data-nav-overlay></div>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="nav-label">학습 경로</div>
+      <ul class="nav-list">
+        <li><a href="../index.html" data-nav="home"><span class="nav-num">홈</span>가이드 소개</a></li>
+        <li><a href="01-start.html" data-nav="01"><span class="nav-num">01</span>시작하기</a></li>
+        <li><a href="02-project.html" data-nav="02"><span class="nav-num">02</span>프로젝트</a></li>
+        <li><a href="03-workspace.html" data-nav="03"><span class="nav-num">03</span>워크스페이스</a></li>
+        <li><a href="04-in-out.html" data-nav="04"><span class="nav-num">04</span>인·아웃</a></li>
+        <li><a href="05-cut.html" data-nav="05"><span class="nav-num">05</span>컷</a></li>
+        <li><a href="06-trim.html" data-nav="06"><span class="nav-num">06</span>트림</a></li>
+        <li><a href="07-jl-cut.html" data-nav="07"><span class="nav-num">07</span>J / L 컷</a></li>
+        <li><a href="08-shortcuts.html" data-nav="08"><span class="nav-num">08</span>단축키</a></li>
+        <li><a href="09-practice.html" data-nav="09"><span class="nav-num">09</span>실습</a></li>
+        <li><a href="10-export.html" data-nav="10"><span class="nav-num">10</span>내보내기</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <p class="kicker">레슨 02</p>
+      <h1>프로젝트와 시퀀스</h1>
+      <p class="lede">영상을 담을 타임라인을 만들고, 원본 파일을 프로젝트로 가져옵니다.</p>
+      <div class="goal"><strong>목표.</strong> 시퀀스 하나를 만들고, 원본 폴더의 클립이 프로젝트 패널에 보이게 합니다.</div>
+
+      <h2>프로젝트와 시퀀스의 차이</h2>
+      <p><strong>프로젝트</strong>는 작업 전체입니다. 파일 이름 끝은 <span class="path">.prproj</span>입니다. <strong>시퀀스</strong>는 그 안의 타임라인입니다. 하나의 프로젝트에 시퀀스를 여러 개 둘 수 있습니다. 컷편집은 시퀀스 위에서 이뤄집니다.</p>
+
+      <h2>시퀀스 만들기</h2>
+      <ol class="steps">
+        <li><span class="path">파일 → 새로 만들기 → 시퀀스</span>를 엽니다. 단축키는 <kbd>Ctrl</kbd>+<kbd>N</kbd>입니다.</li>
+        <li>잘 모르겠으면 프리셋에서 <strong>Digital SLR → 1080p → DSLR 1080p30</strong>처럼 촬영 설정에 가까운 항목을 고릅니다.</li>
+        <li>유튜브·일반 폰 영상은 보통 1920×1080, 30fps 또는 60fps입니다. 24fps는 영화 느낌입니다.</li>
+        <li>시퀀스 이름을 <span class="path">메인</span>처럼 알아보기 쉽게 바꿉니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/02-sequence.png" alt="새 시퀀스 창에서 1080p 30fps 프리셋을 고르는 화면" width="1280" height="720">
+        <figcaption>새 시퀀스 창. 촬영 설정에 가까운 프리셋(예: 1080p 30fps)을 고릅니다.</figcaption>
+      </figure>
+      <p class="tip">클립을 프로젝트 패널에서 타임라인 아래로 끌어다 놓으면, 그 클립 설정에 맞춰 시퀀스를 만들어 주겠냐고 묻습니다. 입문 단계에서는 이 방법이 가장 실수가 적습니다.</p>
+
+      <h2>미디어 가져오기</h2>
+      <ol class="steps">
+        <li>원본은 이미 <span class="path">01_원본</span>에 복사해 둡니다. 카메라에서 바로 편집하지 마세요.</li>
+        <li><span class="path">파일 → 가져오기</span> 또는 프로젝트 패널 빈 곳을 더블클릭합니다. 단축키 <kbd>Ctrl</kbd>+<kbd>I</kbd>.</li>
+        <li>영상·오디오 파일을 선택합니다. 폴더째 가져와 정리해도 됩니다.</li>
+        <li>프로젝트 패널에 클립 이름이 보이면 가져오기가 된 것입니다. 타임라인에 아직 없어도 됩니다.</li>
+      </ol>
+      <figure class="shot">
+        <img src="../images/02-import.png" alt="프로젝트 패널에 가져온 영상 클립이 보이는 화면" width="1280" height="720">
+        <figcaption>파일 → 가져오기 후, 프로젝트 패널에 클립이 보이면 성공입니다.</figcaption>
+      </figure>
+      <p class="callout">프리미어는 원본을 “가리키는” 방식입니다. 원본 폴더를 옮기거나 이름을 바꾸면 오프라인(연결 끊김)이 됩니다. 작업 중에는 폴더 위치를 바꾸지 마세요.</p>
+
+      <h2>클립을 타임라인에 올리기</h2>
+      <p>프로젝트 패널의 클립을 타임라인(보통 아래쪽)으로 드래그합니다. 비디오는 V1, 오디오는 A1에 같이 붙는 경우가 많습니다. 여러 클립은 촬영 순서대로 늘어놓으면 컷이 수월합니다.</p>
+      <figure class="shot">
+        <img src="../images/02-timeline.png" alt="타임라인 V1·A1에 클립이 올라간 화면" width="1280" height="720">
+        <figcaption>클립을 타임라인으로 드래그하면 보통 영상은 V1, 소리는 A1에 붙습니다.</figcaption>
+      </figure>
+
+      <h2>확인</h2>
+      <div class="check-list" data-checklist="first-cut-02">
+        <label><input type="checkbox"> 시퀀스가 하나 있고 타임라인이 보인다</label>
+        <label><input type="checkbox"> 원본 클립이 프로젝트 패널에 있다</label>
+        <label><input type="checkbox"> 클립 하나 이상이 타임라인에 올라가 있다</label>
+        <label><input type="checkbox"> 프로젝트를 저장했다 (Ctrl+S)</label>
+      </div>
+      <p class="progress" data-checklist-progress></p>
+
+      <div class="pager">
+        <a href="01-start.html"><span>이전</span>01 시작하기</a>
+        <a href="03-workspace.html"><span>다음</span>03 워크스페이스</a>
+      </div>
+    </main>
+  </div>
+  <script src="../js/nav.js"></script>
+  <script src="../js/checklist.js"></script>
+</body>
+</html>
