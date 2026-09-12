@@ -36,51 +36,97 @@
     <main class="main">
       <p class="kicker">레슨 04</p>
       <h1>쓸 구간만 집어 넣기</h1>
-      <p class="lede">원본 전체를 타임라인에 올리지 않습니다. 인·아웃으로 “이 부분만” 지정한 뒤 넣습니다.</p>
-      <div class="goal"><strong>목표.</strong> Source에서 I/O를 찍고, Insert와 Overwrite의 차이를 알고 클립을 시퀀스에 넣습니다.</div>
+      <p class="lede">원본 전체를 타임라인에 끌어다 놓지 않습니다. 왼쪽 위 Source에서 “여기부터 여기까지”를 찍은 뒤, 아래 타임라인에 그 구간만 넣습니다.</p>
+      <div class="goal"><strong>목표.</strong> 프로젝트 패널 → Source → I/O → 타임라인 재생헤드 → 쉼표(Insert) 순서를 혼자 한 번 끝냅니다.</div>
 
-      <h2>인 포인트와 아웃 포인트</h2>
+      <h2>지금 볼 화면 위치</h2>
+      <p>키보드를 누르기 전에, 네 칸이 어디인지 눈으로 확인하세요. 헷갈리면 <span class="path">창 → 작업 영역 → 편집</span>으로 되돌립니다.</p>
+      <div class="card-grid">
+        <article class="card"><p class="num">왼쪽 아래</p><h3>프로젝트</h3><p>가져온 파일 목록입니다. 클립을 <strong>더블클릭</strong>하는 곳입니다.</p></article>
+        <article class="card"><p class="num">왼쪽 위</p><h3>Source 소스</h3><p>원본을 미리 보는 창입니다. <kbd>I</kbd> <kbd>O</kbd>는 <strong>여기가 선택된 상태</strong>에서 누릅니다.</p></article>
+        <article class="card"><p class="num">오른쪽 위</p><h3>Program 프로그램</h3><p>타임라인 결과입니다. 인·아웃을 찍는 곳이 아닙니다.</p></article>
+        <article class="card"><p class="num">맨 아래</p><h3>타임라인</h3><p>빨간 세로선(재생헤드)이 “여기에 넣을게”를 가리킵니다.</p></article>
+      </div>
+      <p class="callout">가장 흔한 실수: 오른쪽 Program을 보고 <kbd>I</kbd>를 누르는 것입니다. 인·아웃은 왼쪽 위 <strong>Source</strong>에서 찍습니다. Source 테두리가 밝게 강조되면 그 창이 선택된 것입니다.</p>
+
+      <h2>1단계. 클립을 Source에 열기</h2>
       <ol class="steps">
-        <li>프로젝트 패널에서 클립을 더블클릭합니다. Source 모니터에 열립니다.</li>
-        <li>쓸 시작 프레임에서 <kbd>I</kbd> (Mark In).</li>
-        <li>쓸 끝 프레임에서 <kbd>O</kbd> (Mark Out).</li>
-        <li>Source 아래 미니 타임라인에 밝은 구간이 표시되면 성공입니다.</li>
+        <li>화면 <strong>왼쪽 아래</strong> 프로젝트 패널을 클릭합니다. 파일 이름이 보여야 합니다.</li>
+        <li>쓸 영상 클립을 <strong>한 번이 아니라 두 번</strong> 클릭합니다(더블클릭).</li>
+        <li>화면 <strong>왼쪽 위</strong> Source에 그 영상이 재생되면 성공입니다. 오른쪽 Program이 바뀌지 않아도 됩니다.</li>
+        <li>Source 화면을 한 번 클릭해 두세요. 다음에 누르는 <kbd>I</kbd> <kbd>O</kbd>가 여기로 가게 하기 위해서입니다.</li>
+      </ol>
+      <p class="tip">더블클릭해도 Source가 안 열리면, 클립을 프로젝트에서 Source 창 안으로 드래그해도 됩니다.</p>
+
+      <h2>2단계. 쓸 시작(인)과 끝(아웃) 찍기</h2>
+      <p>인(<kbd>I</kbd>)은 “여기서부터 쓸게”, 아웃(<kbd>O</kbd>)은 “여기까지만 쓸게”입니다. 원본 파일은 잘리지 않고, <strong>가져올 범위만</strong> 표시됩니다.</p>
+      <ol class="steps">
+        <li>Source 아래쪽 작은 막대(소스 타임라인)를 클릭하거나, 스페이스바로 재생·정지합니다. 한 프레임씩은 <kbd>←</kbd> <kbd>→</kbd>입니다.</li>
+        <li>쓰고 싶은 <strong>첫 장면</strong>이 Source에 나온 순간, 키보드 <kbd>I</kbd>를 누릅니다. 또는 Source 아래 버튼 중 왼쪽 꺾쇠 <strong>{</strong> (인 표시)를 마우스로 눌러도 됩니다.</li>
+        <li>다시 재생해서 쓰고 싶은 <strong>마지막 장면</strong>에서 멈춘 뒤 <kbd>O</kbd>를 누릅니다. 마우스라면 오른쪽 꺾쇠 <strong>}</strong> (아웃 표시)입니다.</li>
+        <li>Source 아래 작은 막대에서 <strong>중간만 밝고 양쪽은 어둡게</strong> 보이면 성공입니다. 밝힌 부분만 타임라인에 들어갑니다.</li>
       </ol>
       <figure class="shot">
         <img src="../images/04-inout.png" alt="소스 모니터에서 인·아웃 구간이 표시된 화면" width="1280" height="720">
-        <figcaption>Source 모니터. I와 O로 찍은 구간이 아래 미니 타임라인에 밝게 표시됩니다.</figcaption>
+        <figcaption>왼쪽 위 Source. 아래 미니 막대의 밝은 구간이 I~O입니다. 오른쪽 Program이 아닙니다.</figcaption>
       </figure>
-      <p>잘못 찍었으면 다시 <kbd>I</kbd> / <kbd>O</kbd>를 누르면 위치가 바뀝니다. 지우려면 <span class="path">마커 → 인 앤 아웃 지우기</span> 또는 Source에서 우클릭합니다.</p>
+      <div class="card-grid">
+        <article class="card"><h3>잘못 찍었을 때</h3><p>시작을 다시 맞춘 뒤 <kbd>I</kbd>, 끝을 다시 맞춘 뒤 <kbd>O</kbd>만 누르면 위치가 바뀝니다. 이전에 찍은 표시는 덮어씌워집니다.</p></article>
+        <article class="card"><h3>지우고 싶을 때</h3><p>Source를 우클릭 → <strong>인 앤 아웃 지우기</strong>. 또는 메뉴 <span class="path">마커 → 인 앤 아웃 지우기</span>.</p></article>
+      </div>
+      <p class="callout"><kbd>I</kbd>를 눌렀는데 아래 타임라인에 표시가 생기면, 지금 선택된 창이 Source가 아닙니다. Source 화면을 클릭한 다음 다시 <kbd>I</kbd>를 누르세요.</p>
 
-      <h2>Insert와 Overwrite</h2>
-      <p>시퀀스 재생헤드가 “어디에 넣을지”를 정합니다. 그다음 넣는 방식이 두 가지입니다.</p>
+      <h2>3단계. 타임라인에 넣을 자리 정하기</h2>
+      <p>인·아웃은 “무엇을 넣을지”이고, 재생헤드는 “어디에 넣을지”입니다.</p>
+      <ol class="steps">
+        <li>화면 <strong>맨 아래</strong> 타임라인을 한 번 클릭합니다.</li>
+        <li>빨간 세로선(재생헤드)을 마우스로 잡고 끌거나, 눈금 위를 클릭해 옮깁니다. 맨 앞에 넣으려면 타임라인 맨 왼쪽(00:00)으로 가져갑니다.</li>
+        <li>이미 클립이 있으면, 새 컷을 넣고 싶은 지점에 빨간 선을 맞춥니다. 클립 사이 틈에 붙이려면 <kbd>S</kbd> 스냅을 켜 두는 편이 쉽습니다.</li>
+      </ol>
+
+      <h2>4단계. 넣기 — 처음엔 쉼표만</h2>
+      <p>넣을 때는 <strong>Source에 인·아웃이 있는 상태</strong>에서 키보드를 누릅니다. 마우스로 프로젝트 클립을 타임라인에 끌어다 놓으면 원본 전체가 들어갈 수 있습니다.</p>
       <div class="card-grid">
         <article class="card">
           <p class="num">쉼표 ,</p>
-          <h3>Insert 삽입</h3>
-          <p>재생헤드 위치를 벌리고 그 사이에 클립을 넣습니다. 뒤에 있던 컷이 밀려 납니다. 길이가 늘어납니다.</p>
+          <h3>Insert 삽입 — 초보 기본</h3>
+          <p>재생헤드 위치를 벌리고 그 사이에 넣습니다. 뒤에 있던 컷은 오른쪽으로 밀립니다. 길이가 늘어납니다. 빈 타임라인에서도 이걸 쓰면 됩니다.</p>
         </article>
         <article class="card">
           <p class="num">마침표 .</p>
-          <h3>Overwrite 덮어쓰기</h3>
-          <p>이미 있는 컷 위에 덮습니다. 전체 길이는 그대로이고, 그 구간만 바뀝니다.</p>
+          <h3>Overwrite 덮어쓰기 — 나중에</h3>
+          <p>이미 있는 컷 <strong>위</strong>를 지우고 덮습니다. 전체 길이는 그대로입니다. 실수로 좋은 컷이 사라질 수 있습니다.</p>
         </article>
       </div>
-      <p class="callout">입문 컷편집에서는 대부분 <strong>Insert(,)</strong>가 안전합니다. Overwrite는 “이 자리의 화면만 바꾸고 싶을 때” 씁니다. 실수로 덮어썼다면 <kbd>Ctrl</kbd>+<kbd>Z</kbd>.</p>
+      <ol class="steps">
+        <li>Source에 밝은 I~O 구간이 있는지 다시 봅니다.</li>
+        <li>타임라인 빨간 선이 원하는 자리에 있는지 봅니다.</li>
+        <li>키보드 <strong>쉼표</strong> <kbd>,</kbd> 를 한 번 누릅니다. (한글 입력이 켜져 있어도 보통 동작합니다. 안 되면 영문 키로 바꿉니다.)</li>
+        <li>아래 타임라인에 짧은 클립이 생기고, 오른쪽 위 Program에서 그 구간이 보이면 성공입니다.</li>
+        <li>마침표 <kbd>.</kbd> 는 “이 자리를 바꿔 덮고 싶다”고 확실할 때만 씁니다. 덮인 뒤에는 바로 Program을 재생해 보고, 아니면 <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 되돌립니다.</li>
+      </ol>
+      <p class="callout">입문 컷편집에서는 거의 항상 <strong>Insert(,)</strong>가 안전합니다. 타임라인에 검은 구멍이나 이상한 클립이 생겼으면 실행 취소 후, Source를 클릭했는지부터 다시 확인하세요.</p>
       <figure class="shot">
         <img src="../images/04-insert.png" alt="타임라인 재생헤드 위치에 클립을 삽입하는 화면" width="1280" height="720">
-        <figcaption>재생헤드가 넣을 자리입니다. 쉼표(Insert)는 뒤를 밀어 넣고, 마침표(Overwrite)는 그 위를 덮습니다.</figcaption>
+        <figcaption>아래 타임라인의 빨간 선이 넣을 자리입니다. 그 상태에서 쉼표(Insert)를 누릅니다.</figcaption>
       </figure>
 
-      <h2>세 점 편집의 감각</h2>
-      <p>프로는 보통 Source에서 인·아웃(두 점)을 찍고, 시퀀스에서는 인(한 점, 재생헤드)만 찍습니다. 이것을 세 점 편집이라고 합니다. 마우스로 드래그하는 것보다 빠르고, 쓸데없는 앞뒤 공백이 타임라인에 덜 쌓입니다.</p>
+      <h2>한 번에 따라 하기</h2>
+      <ol class="steps">
+        <li>왼쪽 아래 프로젝트 → 클립 더블클릭 → 왼쪽 위 Source에 영상 확인.</li>
+        <li>Source 클릭 → 시작 장면에서 <kbd>I</kbd> → 끝 장면에서 <kbd>O</kbd> → 아래 막대가 일부만 밝은지 확인.</li>
+        <li>아래 타임라인 클릭 → 빨간 선을 넣을 자리로 이동.</li>
+        <li>쉼표 <kbd>,</kbd> → 타임라인에 짧은 클립이 붙었는지 확인 → 스페이스로 Program 재생.</li>
+      </ol>
+      <p class="tip">이것을 세 점 편집이라고 합니다. Source에서 두 점(인·아웃), 타임라인에서 한 점(재생헤드). 마우스로 통째로 드래그하는 것보다 앞뒤 군더더기가 덜 들어갑니다.</p>
 
       <h2>확인</h2>
       <div class="check-list" data-checklist="first-cut-04">
-        <label><input type="checkbox"> Source에서 I와 O로 구간을 지정했다</label>
-        <label><input type="checkbox"> 쉼표로 Insert를 해 봤다</label>
-        <label><input type="checkbox"> 마침표로 Overwrite를 한 뒤 실행 취소로 되돌렸다</label>
-        <label><input type="checkbox"> 타임라인에 “쓸 구간만” 올라간 것을 확인했다</label>
+        <label><input type="checkbox"> 프로젝트에서 클립을 더블클릭해 왼쪽 위 Source에 열었다</label>
+        <label><input type="checkbox"> Source를 클릭한 뒤 I와 O를 눌러, 아래 막대 일부만 밝아진 것을 봤다</label>
+        <label><input type="checkbox"> 타임라인 빨간 선을 옮긴 다음 쉼표로 Insert 했다</label>
+        <label><input type="checkbox"> 타임라인에 원본 전체가 아니라 “쓸 구간만” 올라간 것을 확인했다</label>
+        <label><input type="checkbox"> 마침표 Overwrite는 한 번만 시험하고 Ctrl+Z로 되돌렸다</label>
       </div>
       <p class="progress" data-checklist-progress></p>
 
